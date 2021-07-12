@@ -2,7 +2,32 @@
 
 ## master (unreleased)
 
-Nothing to see here yet.
+Nothing here yet.
+
+## v15.4.0 (2021-07-12)
+
+- New calendar: Added Nigeria calendar by @taiyeoguns (#656)
+- Fix: Chilean calendar floating dates, add Indigenous Peoples Day using solar term, thx @ajcobo.
+
+## v15.3.1 (2021-07-02)
+
+### Bugfixes
+
+- Updated Japan calendar because of the Olympics, thx @lxlgarnett. (#662)
+- Fixed Japan "Sports Day" label depending on the year.
+
+### Documentation
+
+- The Workalendar project has been moved from Peopledoc's organization to its own (#651, #653, thx to @ewjoachim).
+
+## v15.3.0 (2021-05-07)
+
+- Fix Barbados calendar to add 2 non computable public holiday and fix boxing day computation, thx to @ludsoft (#647).
+
+## v15.2.0 (2021-04-23)
+
+- Fixed Cuiaba City calendar (Brazil), adding Easter Sunday, Corpus Christi and Good Friday, thx @leogregianin (#642).
+- Fix Catalonian calendar: add missing St John the Baptist public holiday, thx @lozlow (#643).
 
 ## v15.1.0 (2021-03-12)
 
@@ -266,7 +291,7 @@ Nothing to see here yet.
 
 - Changes in the ``registry.items()`` method API.
   - This method is aliased to ``get_calendars()``. In a near release, the ``items()`` method will change its purpose.
-  - The ``get_calendars()`` method accepts an empty/missing ``region_codes`` argument to retrieve the full registry. Please see the [ISO Registry documentation](https://peopledoc.github.io/workalendar/iso-registry.html) for extensive usage docs (#403, #375).
+  - The ``get_calendars()`` method accepts an empty/missing ``region_codes`` argument to retrieve the full registry. Please see the [ISO Registry documentation](https://workalendar.github.io/workalendar/iso-registry.html) for extensive usage docs (#403, #375).
 
 ## v7.2.0 (2019-12-06)
 
@@ -475,7 +500,7 @@ Nothing to see here yet.
 ### Major changes
 
 - Removed dependency to `PyEphem`. This package was the "Python2-compatible" library to deal with the xephem system library. Now it's obsolete, so you don't need this dual-dependency handling, because `ephem` is compatible with Python 2 & Python 3 (#296).
-- Raise an exception when trying to use unsupported date/datetime types. Workalendar now only supports stdlib `date` & `datetime` (sub)types. See the [basic documentation](https://peopledoc.github.io/workalendar/basic.html#standard-datetime-types-only-please) for more details (#294).
+- Raise an exception when trying to use unsupported date/datetime types. Workalendar now only supports stdlib `date` & `datetime` (sub)types. See the [basic documentation](https://workalendar.github.io/workalendar/basic.html#standard-datetime-types-only-please) for more details (#294).
 
 ## v3.1.1 (2018-11-17)
 
